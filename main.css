@@ -15,3 +15,6 @@ h1 #logo {
     padding: 5px;
     width: 400px;
 }
+.submit-button {
+    opacity: 0.75;
+}
