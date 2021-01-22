@@ -2,7 +2,7 @@ h1 #logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 17rem;
     height: auto;
 }
 #search-form {
@@ -10,11 +10,29 @@ h1 #logo {
     justify-content: center;
 }
 .search-bar {
-    border-radius: 25px;
-    border-width: thin;
+    border-radius: 25rem;
+    background-color: white;
+    border: thin solid hsl(239, 1%, 89%);
     padding: 5px;
-    width: 400px;
+    width: 36rem;
+    height: 2.6rem;
+    display: flex;
+    justify-content: center;
 }
 .submit-button {
-    opacity: 0.75;
+    position: relative;
+    border: thin solid hsl(239, 0%, 95%);
+    background-color: hsl(239, 0%, 95%);
+    border-radius: 0.25rem;
+    width: auto;
+    height: 2rem;
+    padding: 0rem 0.75rem 0rem 0.75rem;
+    left: 10rem;
+    top: 1rem;
+}
+
+.divider {
+    width: 0.1rem;
+    height: auto;
+    display: inline-block;
 }
