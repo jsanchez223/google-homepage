@@ -1,9 +1,28 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+/*********/
+/* Links */
+/*********/
+a:link {
+    color: hsl(239, 0%, 45%);
+    text-decoration: none;
+}
 
-#topnav {
-    position: absolute;
+a:visited {
+    color: hsl(239, 0%, 45%);
+    text-decoration: none;
+}
+
+a:hover {
+    color:hsl(239, 0%, 20%);
+    text-decoration: underline;
+}
+/******************/
+/* Top Navigation */
+/******************/
+.topnav {
+    position: absolute; 
     top: 0;
     width: 100%;
     height: 2.5rem;
@@ -13,20 +32,31 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
   li {
-      display: inline;
+   display: inline-block;
+   padding: 1rem 0.5rem;
+   font-size: 0.8em;
+   color: hsl(239, 0%, 45%);
   }
 
-  .topright {
-
+  #topright {
+    float: right;
+    padding-right: 2rem;
+  }
+  #topleft {
+      float: left;
+      padding-left: 1rem;
+      padding-top: 0.5rem;
   }
 
-  .topleft {
-
+  .topleft .topright {
+    float: left;
   }
-
+/***********************/
+/* Logo and Search Bar */
+/***********************/
 h1 #logo { 
     position: relative;
     display: block;
@@ -66,6 +96,7 @@ h1 #logo {
     position: relative;
     border: thin solid hsl(239, 0%, 95%);
     background-color: hsl(239, 0%, 95%);
+    color: hsl(239, 0%, 45%);
     border-radius: 0.25rem;
     width: auto;
     height: 2.1rem;
@@ -74,15 +105,42 @@ h1 #logo {
     top: 1rem;
 }
 
+.submit-button:hover {
+    border-color: hsl(239, 1%, 80%);
+    box-shadow: 0 0.1em 0.1em hsl(239, 1%, 85%);
+    color: hsl(239, 0%, 20%);
+}
+
 .divider {
     width: 0.1rem;
     height: auto;
     display: inline-block;
 }
-
+/**********/
+/* Footer */
+/**********/
 #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+    background-color: hsl(239, 0%, 92%);
+    border: thin solid hsl(239, 1%, 85%);
 }
+
+.footer {
+    font-size: 1.1em;
+}
+
+#bottom-right {
+    float: right;
+    padding-right: 2rem;
+  }
+  #bottom-left {
+      float: left;
+      padding-left: 2rem;
+  }
+
+  .bottom-left .bottom-right {
+    float: left;
+  }
