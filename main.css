@@ -54,6 +54,30 @@ ul {
   .topleft .topright {
     float: left;
   }
+  .signin-button {
+    font-weight: bold;
+    border: thin solid hsl(239, 0%, 95%);
+    background-color: #0f64f2;
+    color: white;
+    border-radius: 0.25rem;
+    width: auto;
+    height: 2.1rem;
+    padding: 0rem 0.75rem 0rem 0.75rem;
+  }
+
+  .signin-button:hover {
+    box-shadow: 0 0.07em 0.1em hsl(239, 1%, 85%);
+
+  }
+
+  #apps {
+    position: relative;
+    top: 0.3em;
+  }
+
+  #apps:hover {
+      color: hsl(239, 0%, 20%)
+  }
 /***********************/
 /* Logo and Search Bar */
 /***********************/
